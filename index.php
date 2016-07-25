@@ -43,7 +43,7 @@
 	</aside>
 
 	<footer>
-		<p>Copyright 2009 Your name</p>
+		<p>Copyright 2019 Your name</p>
 	</footer>
 	
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
