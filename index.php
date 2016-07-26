@@ -10,11 +10,6 @@
 <body>
 
 	<header>
-		<nav>
-			<ul>
-				<li>Meu menu</li>
-			</ul>
-		</nav>
 	</header>
 	
 	<section>
@@ -24,8 +19,12 @@
 				<h2>Article title</h2>
 				<p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
 				
-				<!-- Go to www.addthis.com/dashboard to customize your tools -->
+				<!-- Go to www.addthis.com/dashboard to customize your tools
 				<div class="addthis_sharing_toolbox"></div>
+				 -->
+				 
+				 
+				<div class="addthis_toolbox addthis_default_style "></div>
 
 			</header>
 			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
@@ -50,8 +49,11 @@
 		<p>Copyright 2019 Your name</p>
 	</footer>
 	
-	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<!-- Go to www.addthis.com/dashboard to customize your tools 
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57958acf666deb78"></script>
+	-->
+	
+	<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5188f1240ece93e4" type="text/javascript"></script>
 
 	
 	<!-- 
