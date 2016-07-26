@@ -14,6 +14,8 @@
 	
 	<section>
 	
+		<div class="addthis_sharing_toolbox addthis_default_style"></div>
+	
 		<article>
 			<header>
 				<h2>Article title</h2>
@@ -24,7 +26,7 @@
 				 -->
 				 
 				 
-				<div class="addthis_toolbox addthis_default_style "></div>
+				
 
 			</header>
 			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
