@@ -1,4 +1,12 @@
 {
+    "name": "Git Teste",
+    "description": "Breve descrição do que a aplicação se propoe a fazer",
+    "authors": [
+        {
+            "name": "Bruno Henrique Ferronato",
+            "email": "bferronato@gmail.com"
+        }
+    ],
     "require": {
         "php": ">=5.3.3"
     }
