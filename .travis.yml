@@ -3,8 +3,7 @@ php:
 - 7.1
 #- 5.4
 #- hhvm
-script: phpunit Test.php
-script: phpunit Teste.php
+script: phpunit testes/*.php
 
 
 #before_script: composer require atoum/atoum
