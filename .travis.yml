@@ -4,6 +4,7 @@ php:
 #- 5.4
 #- hhvm
 script: phpunit Test.php
+script: phpunit Test.php
 
 
 #before_script: composer require atoum/atoum
