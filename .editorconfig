@@ -1,5 +1,11 @@
 # My personal preferences.
 
-[indent]
-mode = "tabs"		# It's either "spaces" or "tabs".
-size = 4
+
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+[*.*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
