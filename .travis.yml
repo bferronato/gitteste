@@ -19,6 +19,5 @@ script: phpunit testes
 #  - hhvm
 #  - nightly
 
-
 #before_script: wget http://downloads.atoum.org/nightly/mageekguy.atoum.phar
 #script: php mageekguy.atoum.phar
