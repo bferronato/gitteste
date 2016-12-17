@@ -1,15 +1,1 @@
 [![Build Status](https://travis-ci.org/bferronato/gitteste.svg?branch=master)](https://travis-ci.org/bferronato/gitteste)
-
-!https://travis-ci.org/bferronato/gitteste.svg?branch=master!:https://travis-ci.org/bferronato/gitteste
-
-
-{<img src="https://travis-ci.org/bferronato/gitteste.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/bferronato/gitteste]
-
-image:https://travis-ci.org/bferronato/gitteste.svg?branch=master["Build Status", link="https://travis-ci.org/bferronato/gitteste"]
-
-.. image:: https://travis-ci.org/bferronato/gitteste.svg?branch=master
-    :target: https://travis-ci.org/bferronato/gitteste
-    
-    =for html <a href="https://travis-ci.org/bferronato/gitteste"><img src="https://travis-ci.org/bferronato/gitteste.svg?branch=master"></a>
-    
-    #https://api.travis-ci.org/repos/bferronato/gitteste/cc.xml?branch=master
