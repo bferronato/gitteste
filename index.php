@@ -1,4 +1,4 @@
 <?php
 
-echo "okok";
+echo "okok0k";
 //phpinfo();
