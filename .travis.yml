@@ -6,8 +6,8 @@ php:
 script: phpunit testes
 
 
-#before_script: composer require atoum/atoum
-#script: vendor/bin/atoum
+before_script: composer require atoum/atoum
+script: vendor/bin/atoum
 
 #language: php
 #php:
