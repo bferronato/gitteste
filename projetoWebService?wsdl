@@ -102,7 +102,7 @@
   </wsdl:binding>
   <wsdl:service name="ProjetoWebServiceService">
     <wsdl:port binding="tns:ProjetoWebServiceServiceSoapBinding" name="ProjetoWebServicePort">
-      <soap:address location="http://sagan.sc.senai.br:8081/sgn2/services/projetoWebService"/>
+      <soap:address location="https://raw.githubusercontent.com/bferronato/gitteste/master/projetoWebService"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
