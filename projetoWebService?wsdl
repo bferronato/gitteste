@@ -82,7 +82,7 @@
   <wsdl:binding name="ProjetoWebServiceServiceSoapBinding" type="tns:ProjetoWebService">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
     <wsdl:operation name="inserirApontamento">
-      <soap:operation soapAction="" style="document"/>
+      <soap:operation soapAction="http://integracao.webservices.sgn2.sc.senai.br/inserirApontamento" style="document"/>
       <wsdl:input name="inserirApontamento">
         <soap:body use="literal"/>
       </wsdl:input>
@@ -91,7 +91,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="atualizarStatusProjeto">
-      <soap:operation soapAction="" style="document"/>
+      <soap:operation soapAction="http://integracao.webservices.sgn2.sc.senai.br/atualizarStatusProjeto" style="document"/>
       <wsdl:input name="atualizarStatusProjeto">
         <soap:body use="literal"/>
       </wsdl:input>
