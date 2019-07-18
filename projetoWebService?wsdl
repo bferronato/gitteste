@@ -1,0 +1,108 @@
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://integracao.webservices.sgn2.sc.senai.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="ProjetoWebServiceService" targetNamespace="http://integracao.webservices.sgn2.sc.senai.br/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://integracao.webservices.sgn2.sc.senai.br/" elementFormDefault="unqualified" targetNamespace="http://integracao.webservices.sgn2.sc.senai.br/" version="1.0">
+
+  <xs:element name="atualizarStatusProjeto" type="tns:atualizarStatusProjeto"/>
+
+  <xs:element name="atualizarStatusProjetoResponse" type="tns:atualizarStatusProjetoResponse"/>
+
+  <xs:element name="inserirApontamento" type="tns:inserirApontamento"/>
+
+  <xs:element name="inserirApontamentoResponse" type="tns:inserirApontamentoResponse"/>
+
+  <xs:complexType name="inserirApontamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idProjetoExterno" type="xs:string"/>
+      <xs:element minOccurs="0" name="cargaHoraria" type="xs:int"/>
+      <xs:element minOccurs="0" name="dataApropriacao" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="usuarioColaborador" type="xs:string"/>
+      <xs:element minOccurs="0" name="idExternoProducao" type="xs:string"/>
+      <xs:element minOccurs="0" name="acao" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="inserirApontamentoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:retorno"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="retorno">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="mensagem" type="xs:string"/>
+      <xs:element minOccurs="0" name="retorno" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="atualizarStatusProjeto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idProjetoExterno" type="xs:string"/>
+      <xs:element minOccurs="0" name="statusProjeto" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="atualizarStatusProjetoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:retorno"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="inserirApontamentoResponse">
+    <wsdl:part element="tns:inserirApontamentoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="atualizarStatusProjetoResponse">
+    <wsdl:part element="tns:atualizarStatusProjetoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="inserirApontamento">
+    <wsdl:part element="tns:inserirApontamento" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="atualizarStatusProjeto">
+    <wsdl:part element="tns:atualizarStatusProjeto" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ProjetoWebService">
+    <wsdl:operation name="inserirApontamento">
+      <wsdl:input message="tns:inserirApontamento" name="inserirApontamento">
+    </wsdl:input>
+      <wsdl:output message="tns:inserirApontamentoResponse" name="inserirApontamentoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="atualizarStatusProjeto">
+      <wsdl:input message="tns:atualizarStatusProjeto" name="atualizarStatusProjeto">
+    </wsdl:input>
+      <wsdl:output message="tns:atualizarStatusProjetoResponse" name="atualizarStatusProjetoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProjetoWebServiceServiceSoapBinding" type="tns:ProjetoWebService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="inserirApontamento">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="inserirApontamento">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="inserirApontamentoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="atualizarStatusProjeto">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="atualizarStatusProjeto">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="atualizarStatusProjetoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProjetoWebServiceService">
+    <wsdl:port binding="tns:ProjetoWebServiceServiceSoapBinding" name="ProjetoWebServicePort">
+      <soap:address location="http://sagan.sc.senai.br:8081/sgn2/services/projetoWebService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
