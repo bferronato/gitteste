@@ -1,6 +1,5 @@
 STAGED
 
-SUPER STAGED
 
 First teste at Github Commit
 
@@ -13,4 +12,5 @@ working directory
 Testets
 
 Local edit
+
 Nova linha de teste
