@@ -2,4 +2,6 @@
 
 echo "OK - default update";
 
-echo "Test passing travis";
+echo "<br>";
+
+echo "Test passing travis CI";
