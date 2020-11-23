@@ -7,3 +7,7 @@ gitteste
 ========
 
 Gistteste
+
+
+* [ ] unchecked # [checkbox:unchecked]
+* [x] checked   # [checkbox:checked]
